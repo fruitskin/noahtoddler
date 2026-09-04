@@ -308,6 +308,12 @@ a {
   text-transform: lowercase;
 }
 
+.crew-role {
+  font-family: var(--font-gochi), cursive;
+  font-size: .95rem;
+  letter-spacing: .04em;
+}
+
 .crew-link {
   color: var(--red);
   font-family: var(--font-gochi), cursive;
