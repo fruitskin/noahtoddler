@@ -67,14 +67,15 @@ export default function Page() {
   const WHATSAPP_URL = 'https://whatsapp.com/channel/0029Vb8l0X72Jl8IlvyHM60d'
 
   const crew = [
-    { name: 'Joe Dollar-Smirnov', role: 'Tea Maker', handle: 'joe-dollar-smirnov' },
-    { name: 'Nene Parsotam', role: 'Tea Maker', handle: 'neneparsotam' },
-    { name: 'Luigi Lucarelli', role: 'Tea Maker', handle: 'luigilucarelli' },
-    { name: 'Aman Bhanot', role: 'Tea Maker', handle: 'aman-bhanot-99370317' },
-    { name: 'Lisa Graydon', role: 'Tea Maker', handle: '4444lisagraydon' },
-    { name: 'Neil Bebber', role: 'Tea Maker', handle: 'neil-bebber' },
-    { name: 'Sarah Dollar', role: 'Tea Maker', handle: 'sarah-dollar-8a136439' },
-    { name: 'Brollyman', role: 'Tea Maker', handle: 'brolly-brollyman-5b7937b' },
+    { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
+    { name: 'Nene Parsotam', role: 'ECD / Advisor', handle: 'neneparsotam' },
+    { name: 'Luigi Lucarelli', role: 'Character Designer', handle: 'luigilucarelli' },
+    { name: 'Aman Bhanot', role: 'Advisor', handle: 'aman-bhanot-99370317' },
+    { name: 'Lisa Graydon', role: 'Actress', handle: '4444lisagraydon' },
+    { name: 'Neil Bebber', role: 'Writer', handle: 'neil-bebber' },
+    { name: 'Sarah Dollar', role: 'Writer', handle: 'sarah-dollar-8a136439' },
+    { name: 'Brollyman', role: 'Composer', handle: 'brolly-brollyman-5b7937b' },
+    { name: 'Tom', role: 'Sculptor / Artist', handle: 'thomas-ridley-a79b4286' },
 
   ]
 
