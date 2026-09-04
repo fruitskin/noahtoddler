@@ -1551,7 +1551,7 @@ h2 em {
      and a soft drop shadow. The card has its own surface so the header and
      footer read as part of it; sections inside stay full-bleed to its edges. */
   body {
-    padding: 2.5rem;
+  e padding: 2.5rem;
   }
 
   main {
