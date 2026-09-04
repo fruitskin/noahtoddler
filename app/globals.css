@@ -24,7 +24,7 @@
 }
 
 :root {
-  --background: #f6f0e6;
+  --background: #F6FEFF;
   --foreground: #171515;
   --card: #fffaf2;
   --card-foreground: #171515;
@@ -1449,10 +1449,8 @@ h2 em {
     width: 100%;
   }
 
-  /* Noah sits on the CTA: anchor him to the bottom of the art box so the
-     headline runs over his head as the columns narrow, not through his face. */
   .hero-image {
-    object-position: center bottom;
+    object-position: center top;
   }
 
   .section-pad {
