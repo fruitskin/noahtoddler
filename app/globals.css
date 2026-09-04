@@ -1395,9 +1395,22 @@ h2 em {
   margin: 0;
 }
 
+/* ==========================================================================
+   BREAKPOINTS
+   --------------------------------------------------------------------------
+   Small   (base)            0px  –  759px   phones            — all base rules
+   Medium  (min-width 760)   760px – 1099px  tablets           — inline nav, 2-col layouts
+   Large   (min-width 1100)  1100px+         laptops/desktops  — full 3-4 col layouts
+
+   Media queries can't read CSS variables, so the pixel values are repeated
+   below. If you change a breakpoint, change it in every @media line here and
+   in the two tiers that follow.
+   ========================================================================== */
+
+/* ---------- MEDIUM: 760px and up (tablet) ---------- */
 @media (min-width: 760px) {
   .site-header {
-    padding: 1.2rem 2.5rem;
+    padding: 1.2rem 2rem;
   }
 
   .menu-button {
@@ -1409,7 +1422,7 @@ h2 em {
     background: transparent;
     display: flex;
     flex-direction: row;
-    gap: 1.65rem;
+    gap: 1.4rem;
     padding: 0;
     position: static;
   }
@@ -1420,8 +1433,9 @@ h2 em {
 
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
-    padding: 5rem 2.5rem 1.5rem;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr);
+    padding: 4rem 2rem 1.5rem;
   }
 
   .hero-copy {
@@ -1430,7 +1444,7 @@ h2 em {
 
   .hero-art {
     align-self: start;
-    height: 520px;
+    height: 420px;
     margin: 0;
     width: 100%;
   }
@@ -1441,9 +1455,9 @@ h2 em {
 
   .section-pad {
     display: grid;
-    gap: 3rem;
-    grid-template-columns: minmax(150px, 25%) 1fr;
-    padding: 7rem 2.5rem;
+    gap: 2rem;
+    grid-template-columns: minmax(140px, 28%) 1fr;
+    padding: 5rem 2rem;
   }
 
   .section-aside {
@@ -1456,7 +1470,7 @@ h2 em {
   }
 
   .rig-image {
-    max-height: 460px;
+    max-height: 400px;
   }
 
   .team-grid {
@@ -1467,30 +1481,119 @@ h2 em {
     grid-column: 1 / -1;
   }
 
-  .crew-grid {
-    grid-column: 1 / -1;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .team-logos img {
     width: 100%;
+  }
+
+  .crew-grid {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .competition {
+    padding: 5rem 2rem;
+  }
+
+  .comic-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .comic-panel {
+    gap: 1.1rem;
+    padding: 2rem;
+  }
+
+  /* Third panel takes a full row so the 2-col grid doesn't leave a gap */
+  .comic-panel:last-child {
+    grid-column: 1 / -1;
   }
 
   .competition-sponsors {
     grid-column: 2 / -1;
   }
 
+  .info-session {
+    align-items: start;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3.5rem 0;
+  }
+
+  .info-copy {
+    grid-column: 1 / 2;
+  }
+
+  .info-card {
+    grid-column: 2 / 3;
+  }
+
   .community {
     grid-template-columns: 1fr 1fr;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .site-footer {
+    padding: 2rem 2rem;
+  }
+
+  .cms-auth,
+  .cms-shell {
+    padding: 3rem 2rem;
+  }
+}
+
+/* ---------- LARGE: 1100px and up (desktop) ---------- */
+@media (min-width: 1100px) {
+  .site-header {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .site-nav {
+    gap: 1.65rem;
+  }
+
+  .hero {
+    gap: 3rem;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+    padding: 5rem 2.5rem 1.5rem;
+  }
+
+  .hero-art {
+    height: 520px;
+  }
+
+  .section-pad {
+    gap: 3rem;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    padding: 7rem 2.5rem;
+  }
+
+  .rig-image {
+    max-height: 460px;
+  }
+
+  .crew-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .competition {
+    padding: 6rem 2.5rem;
+  }
+
+  .comic-grid {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .comic-panel:last-child {
+    grid-column: auto;
   }
 
   .info-session {
-    align-items: start;
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 3.5rem 0;
   }
 
   .info-copy {
@@ -1501,8 +1604,18 @@ h2 em {
     grid-column: 3 / 4;
   }
 
+  .community {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .site-footer {
     padding: 2rem 2.5rem;
+  }
+
+  .cms-auth,
+  .cms-shell {
+    padding: 4rem 2.5rem;
   }
 }
 
@@ -1700,26 +1813,3 @@ h2 em {
   right: 1rem;
 }
 
-@media (min-width: 760px) {
-
-  .cms-auth,
-  .cms-shell {
-    padding: 4rem 2.5rem;
-  }
-}
-
-@media (min-width: 760px) {
-  .competition {
-    padding: 6rem 2.5rem;
-  }
-
-  .comic-grid {
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .comic-panel {
-    gap: 1.1rem;
-    padding: 2rem;
-  }
-}
