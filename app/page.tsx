@@ -75,7 +75,7 @@ export default function Page() {
     { name: 'Neil Bebber', handle: 'neil-bebber' },
     { name: 'Sarah Dollar', handle: 'sarah-dollar-8a136439' },
     { name: 'Brollyman', handle: 'brolly-brollyman-5b7937b' },
-    
+
   ]
 
   return (
@@ -92,8 +92,8 @@ export default function Page() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <h1>INTRODUCING<br /><em>NOAH</em><br />TO YOU</h1>
-          <p className="hero-dek">Noah is a new adult comedy about a young toddler and his adoring parents, his dog and his punk baby sitter. Think family Guys Stewie with Maggie Simpson and Boss Baby! Noah is the first new character we're exploring in his world. He is an annoying toddler who is endured by everybody and loved only by his suffering mum and dad. We&apos;re building a funny but edgy world Noah exists in and we&apos;d love you to join us. Help shape Noah&apos;s destiny. Become a founding fan and watch him grow!</p>
-          <p className="hero-dek">Look out the animation competition launching in October with great prizes including exclusive physical collectables software subscriptions and more.</p>
+          <p className="hero-dek">Noah is a new adult comedy about a young toddler and his adoring parents, his dog and his punk baby sitter. Think Family Guy’s Stewie, with hints Maggie Simpson and Boss Baby! Noah is the first new character we're exploring in his world. He's an annoying toddler who is endured by everybody and loved only by his not-so-long-suffering mum and dad. We&apos;re building a funny but edgy world based around Noah, and we&apos;d love you to join us. Help shape Noah&apos;s destiny by becoming a founding fan, and watch him grow!</p>
+          <p className="hero-dek">Look out the Animation Competition launching in October with fabulous prizes including exclusive physical collectables, software subscriptions and more.</p>
           <a className="arrow-link" href="#community">JOIN THE GANG</a>
         </div>
         <div className="hero-art"><img className="hero-image" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/noah_sitting-gsXkdgTE2zwn8JUtN3HUMLA2bcMnFl.png" alt="Hand-drawn Noah seated in a turquoise outfit with an oversized salmon pacifier" /><a className="hero-cta" href="#community"><strong>become a founding fan</strong><span>JOIN THE GANG</span></a></div>
@@ -101,7 +101,7 @@ export default function Page() {
 
       <section className="intro section-pad" id="noah">
         <div className="section-aside"><SectionLabel>Who is Noah?</SectionLabel><ul className="social-stack"><li><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><img src="/icons/instagram.svg" alt="Instagram" width={24} height={24} /><span className="sr-only">Instagram</span></a></li><li><a href={TIKTOK_URL} target="_blank" rel="noreferrer"><img src="/icons/tiktok.svg" alt="TikTok" width={24} height={24} /><span className="sr-only">TikTok</span></a></li><li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer"><img src="/icons/whatsapp.svg" alt="WhatsApp" width={24} height={24} /><span className="sr-only">WhatsApp</span></a></li></ul></div>
-        <div className="intro-content"><h2>Noah is the toddler we all love to hate.</h2><p className="large-copy">Noah's parents read all the parenting books and he is the result. This comedy gives us all the comic relief to join in laughing at the result of toxically positive parenting. Whether you are #childfree or have survived the explosion, you are our audience. </p><p>Noahs parents are competitive and secretly furious. Noah is their inevitable offspring: a toddler with adult sized opinions, a low grasp of language, and a dummy the size of a plate. Who knows where this addiction could lead.</p></div>
+        <div className="intro-content"><h2>Noah is the toddler we all love to hate.</h2><p className="large-copy">Noah's parents read all the &quot;right&quot; parenting books and he is the result. This comedy gives us all the comic relief to join in laughing at the result of well-intentioned &lpar toxically positive parenting?&rpar. Whether you are #childfree or have survived the explosion, you are our audience. </p><p>Noahs parents are competitive and secretly furious. Noah is their inevitable offspring: a toddler with adult sized opinions, a low grasp of language, and a dummy the size of a plate. Who knows where this addiction could lead.</p></div>
       </section>
 
       <section className="competition" id="competition">
