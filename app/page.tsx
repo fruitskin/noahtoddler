@@ -67,7 +67,7 @@ export default function Page() {
   const WHATSAPP_URL = 'https://whatsapp.com/channel/0029Vb8l0X72Jl8IlvyHM60d'
 
   const crew = [
-    { name: 'Joe Dollar-Smirnov', handle: 'joe-dollar-smirnov' },
+    { name: 'Joe Dollar-Smirnov', handle: 'joe-dollar-smirnov' , role: 'Tea Maker'},
     { name: 'Nene Parsotam', handle: 'neneparsotam' },
     { name: 'Luigi Lucarelli', handle: 'luigilucarelli' },
     { name: 'Aman Bhanot', handle: 'aman-bhanot-99370317' },
