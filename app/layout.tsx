@@ -22,7 +22,7 @@ const gochi = Gochi_Hand({
 })
 
 export const metadata: Metadata = {
-  title: 'NOAH — Make Some Noise',
+  title: 'NOAH — Suck Suck',
   description: 'An 11-second animation competition for people who like their babies loud and their careers less predictable.',
   generator: 'NOAH / Animationfolk',
   icons: {
