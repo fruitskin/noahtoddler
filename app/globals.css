@@ -1546,6 +1546,23 @@ h2 em {
 
 /* ---------- LARGE: 1100px and up (desktop) ---------- */
 @media (min-width: 1100px) {
+
+  /* Page sits centred on the body as a capped-width card with rounded corners
+     and a soft drop shadow. The card has its own surface so the header and
+     footer read as part of it; sections inside stay full-bleed to its edges. */
+  body {
+    padding: 2.5rem;
+  }
+
+  main {
+    background: var(--card);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 48px rgba(23, 21, 21, .16);
+    margin: 0 auto;
+    max-width: 1280px;
+    overflow: hidden;
+  }
+
   .site-header {
     padding: 1.2rem 2.5rem;
   }
@@ -1812,4 +1829,3 @@ h2 em {
   position: fixed;
   right: 1rem;
 }
-
