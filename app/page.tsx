@@ -67,14 +67,15 @@ export default function Page() {
   const WHATSAPP_URL = 'https://whatsapp.com/channel/0029Vb8l0X72Jl8IlvyHM60d'
 
   const crew = [
-    { name: 'Joe Dollar-Smirnov', handle: 'joe-dollar-smirnov' },
-    { name: 'Nene Parsotam', handle: 'neneparsotam' },
-    { name: 'Luigi Lucarelli', handle: 'luigilucarelli' },
-    { name: 'Aman Bhanot', handle: 'aman-bhanot-99370317' },
-    { name: 'Lisa Graydon', handle: '4444lisagraydon' },
-    { name: 'Neil Bebber', handle: 'neil-bebber' },
-    { name: 'Sarah Dollar', handle: 'sarah-dollar-8a136439' },
-    { name: 'Brollyman', handle: 'brolly-brollyman-5b7937b' },
+    { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
+    { name: 'Nene Parsotam', role: 'ECD / Advisor', handle: 'neneparsotam' },
+    { name: 'Luigi Lucarelli', role: 'Character Designer', handle: 'luigilucarelli' },
+    { name: 'Aman Bhanot', role: 'Advisor', handle: 'aman-bhanot-99370317' },
+    { name: 'Lisa Graydon', role: 'Actress', handle: '4444lisagraydon' },
+    { name: 'Neil Bebber', role: 'Writer', handle: 'neil-bebber' },
+    { name: 'Sarah Dollar', role: 'Writer', handle: 'sarah-dollar-8a136439' },
+    { name: 'Brollyman', role: 'Composer', handle: 'brolly-brollyman-5b7937b' },
+    { name: 'Tom', role: 'Sculptor / Artist', handle: 'thomas-ridley-a79b4286' },
 
   ]
 
@@ -101,7 +102,7 @@ export default function Page() {
 
       <section className="intro section-pad" id="noah">
         <div className="section-aside"><SectionLabel>Who is Noah?</SectionLabel><ul className="social-stack"><li><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer"><img src="/icons/instagram.svg" alt="Instagram" width={24} height={24} /><span className="sr-only">Instagram</span></a></li><li><a href={TIKTOK_URL} target="_blank" rel="noreferrer"><img src="/icons/tiktok.svg" alt="TikTok" width={24} height={24} /><span className="sr-only">TikTok</span></a></li><li><a href={WHATSAPP_URL} target="_blank" rel="noreferrer"><img src="/icons/whatsapp.svg" alt="WhatsApp" width={24} height={24} /><span className="sr-only">WhatsApp</span></a></li></ul></div>
-        <div className="intro-content"><h2>Noah is the toddler we all love to hate.</h2><p className="large-copy">Noah's parents read all the &quot;right&quot; parenting books and he is the result. This comedy gives us all the comic relief to join in laughing at the result of well-intentioned (toxically positive parenting?). Whether you are #childfree or have survived the explosion, you are our audience. </p><p>Noahs parents are competitive and secretly furious. Noah is their inevitable offspring: a toddler with adult sized opinions, a low grasp of language, and a dummy the size of a plate. Who knows where this addiction could lead.</p></div>
+        <div className="intro-content"><h2>Noah is the toddler we all love to hate.</h2><p className="large-copy">Noah's parents read all the &quot;right&quot; parenting books and he is the result. This comedy gives us all the comic relief to join in laughing at the result of well-intentioned (toxically positive parenting?). Whether you are #childfree or have survived the explosion, you are our audience. </p><p>Noah's parents are competitive and secretly furious. Noah is their inevitable offspring: a toddler with adult-sized opinions, a seeming poor grasp of language, and a dummy the size of a plate, which he sucks like a tragically dependent vaper.</p></div>
       </section>
 
       <section className="competition" id="competition">
@@ -114,11 +115,11 @@ export default function Page() {
           <article className="comic-panel comic-why">
             <h3>Why?</h3>
             <p>We're building a new adult comedy IP and actively want to open the process up to the creative community.</p>
-            <p>This will allow us to guage interest in 'Noah' but also find a short list animators who we can call on if and when Noah gets funded. We have invested time and energy in, writing, professional acting and recording, character design and rigging to provide professional assets for you to work with alongside dailies run as normal in a studio setting.</p>
+            <p>This will allow us to guage interest in 'Noah' but also find a shortlist animators who we can call on if and when Noah gets funded. We have invested time and energy in, writing, voice acting and recording, character design and rigging to provide professional assets for you to work with alongside dailies run as normal in a remote studio setting.</p>
           </article>
           <article className="comic-panel comic-what">
             <h3>What?</h3>
-            <p>We want to you to do you best work using the assets we provide. We have deliberately designed 4 shots to be a approximately 11 seconds. Each shot is voiced by professional actors and has rough animatics but you are free to design the cinemaphotography however you like. This shot will be one for your demo reel. Play with Noah and bring him to life.</p>
+            <p>We want to you to do you best work using the assets we provide. We have designed 4 shorts, to run at approximately 11 seconds. Each shot is voiced by professional actors and has rough animatics but you are free to design the cinemaphotography however you like. This shot will be one for your demo reel. Play with Noah and bring him to life, using your own unique style.</p>
           </article>
           <article className="comic-panel comic-who">
             <h3>Who?</h3>
@@ -130,7 +131,7 @@ export default function Page() {
             <p className="info-live"><span className="info-dot" aria-hidden="true" />LIVE ON ZOOM</p>
             <h2>Come to the info session.</h2>
             <p>Late September 2026 (exact time TBC)</p>
-            <p>A live Zoom call where we walk through the competition, show the Noah rigs and assets, and answer every question you throw at us — briefs, deadlines, formats, prizes, the lot. Bring your camera off and your questions on. A recording of the call will be distributed to the email list so dont worry if you can't make it.</p>
+            <p>A live Zoom call, where we walk through the competition, show the Noah rigs and assets, and answer every question you throw at us; briefs, deadlines, formats, prizes, the lot. A recording of the call will be distributed to the email list so dont worry if you can't make it.</p>
             <ul className="info-points">
               <li>Full competition walkthrough</li>
               <li>Live Q&amp;A with the crew</li>
@@ -153,12 +154,12 @@ export default function Page() {
         <div className="rig-copy"><SectionLabel>The Rigs</SectionLabel><h2>2D & 3D<br /><em>rigs available</em></h2><p>At the start of the competition, we will provide 3D and 2D rigs, distributed via Gumroad.</p></div>
       </section>
 
-      <section className="team section-pad" id="team"><div className="section-aside"><SectionLabel>The crew</SectionLabel></div><div className="team-content"><h2>A small crew with<br /><em>big references.</em></h2><div className="team-grid"><div><p className="team-role">MADE BY</p><h3>Animationfolk</h3></div><div><p className="team-role">ADVISORS FROM</p><p>ex-Prime Video / Disney<br />ex-DreamWorks<br />ex-Framestore / ILM</p></div></div><p className="team-footer">As well as folk from some of the best known studios on the planet, we have a scupltor working on a real world model of Noah. Because we believe that the craftsmanship and artistry of design and animation takes a leading role!</p><div className="crew-grid">{crew.map((person) => (<a key={person.handle} className="crew-card card-lift" href={`https://www.linkedin.com/in/${person.handle}`} target="_blank" rel="noreferrer"><span className="crew-name">{person.name}</span><span className="crew-link">LinkedIn ↗</span></a>))}</div><div className="team-logos" aria-label="Companies represented across the team and advisor network"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logos-obS7ydflIxy2t5sOPVYPVhdT8rzNE5.png" alt="Grayscale logo strip featuring Microsoft, Disney, Amazon Studios, Prime Video, Paramount, Meta, Hasbro, and DreamWorks" /></div></div></section>
+      <section className="team section-pad" id="team"><div className="section-aside"><SectionLabel>The crew</SectionLabel></div><div className="team-content"><h2>A small crew with<br /><em>big references.</em></h2><div className="team-grid"><div><p className="team-role">MADE BY</p><h3>Animationfolk</h3></div><div><p className="team-role">ADVISORS FROM</p><p>ex-Prime Video / Disney<br />ex-DreamWorks<br />ex-Framestore / ILM</p></div></div><p className="team-footer">As well as folk from some of the best known studios on the planet, we have a scupltor working on a real world model of Noah. Because we believe that the craftsmanship and artistry of design and animation takes a leading role!</p><div className="crew-grid">{crew.map((person) => (<a key={person.handle} className="crew-card card-lift" href={`https://www.linkedin.com/in/${person.handle}`} target="_blank" rel="noreferrer"><span className="crew-name">{person.name}</span><span className="crew-role">{person.role}</span><span className="crew-link">LinkedIn ↗</span></a>))}</div><div className="team-logos" aria-label="Companies represented across the team and advisor network"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logos-obS7ydflIxy2t5sOPVYPVhdT8rzNE5.png" alt="Grayscale logo strip featuring Microsoft, Disney, Amazon Studios, Prime Video, Paramount, Meta, Hasbro, and DreamWorks" /></div></div></section>
 
 
       <section className="community community-qr" id="community"><div className="community-copy"><SectionLabel>Community</SectionLabel><h2>Join the broadcast.<br /><em>Not a group.</em></h2><p>Updates, rig drops, competition news, and the occasional Noah-related emergency. A broadcast channel keeps the noise useful and the admin survivable.</p><a className="black-button" href={WHATSAPP_URL} target="_blank" rel="noreferrer">OPEN WHATSAPP ↗</a></div><a className="qr-card card-lift" href={WHATSAPP_URL} target="_blank" rel="noreferrer"><span className="qr-eyebrow">SCAN TO JOIN</span><span className="qr-frame"><img src="/whatsapp-qr.png" alt="Scan this QR code to join the Noah WhatsApp channel" /></span><span className="qr-hint">Point your camera here ↗</span></a></section>
 
-      <section className="policy section-pad"><div className="section-aside"><SectionLabel>AI policy</SectionLabel></div><div className="policy-copy"><h2>We care about<br /><em>the output.</em></h2><p>Assistive AI is changing how everyone works and we know of super talented artists using AI tools to generate great content. Ultimately we want quality and our entries will be based on quality of animation, story telling and craft. Like many teams assitive AI does help expand our capabilities. For example, we can run research tasks to find sponsors for this competition. Even this website was coded with the help of a coding assistant. However, generative AI text-to-video does warrant a longer conversation. We want to be transparent and we want you to be transparent. If there is demand for entrants primarily using assitive AI tools we want to know about it and have that conversation so we can split the award categories across 3D, 2D and AI. If you are considering entering but will not because of this statement, we would also be very interested to hear about that view and have an open conversation about it. Please feel free to email us on competition@noahtoddler.com</p><p>We value the hand, the eye, the odd choice, and the person behind it. Our standard is artistic integrity, not a purity test. Make good work. Be honest about how you made it.</p></div></section>
+      <section className="policy section-pad"><div className="section-aside"><SectionLabel>AI policy</SectionLabel></div><div className="policy-copy"><h2>We care about<br /><em>the output.</em></h2><p>Assistive AI is changing how everyone works and we know of super talented artists using AI tools to generate great content. Ultimately, we’re interested in quality, and our decisions will be based on quality of animation, storytelling and craft. Like many teams, we’re exploring assistive AI to help expand our capabilities. For example, we can run research tasks to find sponsors for this competition. Even this website was coded with the help of a coding assistant.. However, generative AI text-to-video does warrant a longer conversation. We want to be transparent and we want you to be transparent. If there is demand for entrants primarily using assitive AI tools we want to know about it and have that conversation so we can split the award categories across 3D, 2D and AI. If you are considering entering but will not because of this statement, we would also be very interested to hear about that view and have an open conversation about it. Please feel free to email us on competition@noahtoddler.com</p><p>We value the hand, the eye, the odd choice, and the person behind it. Our standard is artistic integrity, not a purity test. Make good work. Be honest about how you made it.</p></div></section>
 
       <footer className="site-footer"><a className="wordmark" href="#top">NOAH</a><div className="footer-bottom"><p>© 2026 Animation Folk Ltd</p><div className="footer-links"><a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok ↗</a><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram ↗</a></div></div></footer>
     </main >
