@@ -22,26 +22,18 @@ const gochi = Gochi_Hand({
 })
 
 export const metadata: Metadata = {
-  title: 'NOAH — Make Some Noise',
+  title: 'NOAH — Suck Suck',
   description: 'An 11-second animation competition for people who like their babies loud and their careers less predictable.',
   generator: 'NOAH / Animationfolk',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: '/apple-icon.png',
+    apple: '/apple-touch-icon.png',
   },
+  manifest: '/site.webmanifest',
 }
 
 export const viewport: Viewport = {
