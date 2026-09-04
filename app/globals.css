@@ -1545,7 +1545,7 @@ h2 em {
 }
 
 /* ---------- LARGE: 1100px and up (desktop) ---------- */
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   /* Page sits centred on the body as a capped-width card with rounded corners.
      Sections inside stay full-bleed within the card. */
   body {
