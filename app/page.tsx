@@ -188,7 +188,7 @@ export default function Page() {
             <p className="fine-print">One email with the joining link. No spam, no noise.</p>
           </div>
         </div>
-        <div className="competition-sponsors"><p className="sponsors-title">Big thanks to our competition sponsors</p><div className="competition-logos" aria-label="Sponsors: Marionette and Animation Mentor"><img className="comp-logo" src="/logos/marionette.png" alt="Marionette" /><img className="comp-logo" src="/logos/animation-mentor.png" alt="Animation Mentor" /></div></div>
+        <div className="competition-sponsors"><p className="sponsors-title">Big thanks to our competition sponsor</p><div className="competition-logos" aria-label="Sponsor: Animation Mentor"><img className="comp-logo" src="/logos/animation-mentor.png" alt="Animation Mentor" /></div></div>
       </section>
 
       <section className="rig section-pad" id="rig">
