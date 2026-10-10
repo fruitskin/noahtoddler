@@ -59,7 +59,12 @@ export default function Page() {
 
   function handleInfoSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    if (infoEmail.trim()) setInfoSubmitted(true)
+    const value = infoEmail.trim()
+    if (!value) return
+    const subject = encodeURIComponent('Noah Toddler info request')
+    const body = encodeURIComponent(value)
+    window.location.href = `mailto:joe@animationfolk.com?subject=${subject}&body=${body}`
+    setInfoSubmitted(true)
   }
 
   const TIKTOK_URL = 'https://www.tiktok.com/@noahtoddler'
