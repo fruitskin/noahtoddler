@@ -1,6 +1,7 @@
 'use client'
 
-import { FormEvent, useState } from 'react'
+import { FormEvent, useState, useTransition } from 'react'
+import { sendInfoSignup } from './actions/send-info-signup'
 
 const navItems = [
   ['NOAH', '#noah'],
@@ -56,10 +57,22 @@ export default function Page() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [infoEmail, setInfoEmail] = useState('')
   const [infoSubmitted, setInfoSubmitted] = useState(false)
+  const [infoError, setInfoError] = useState<string | null>(null)
+  const [isSending, startSending] = useTransition()
 
   function handleInfoSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    if (infoEmail.trim()) setInfoSubmitted(true)
+    const value = infoEmail.trim()
+    if (!value) return
+    setInfoError(null)
+    startSending(async () => {
+      const result = await sendInfoSignup(value)
+      if (result.ok) {
+        setInfoSubmitted(true)
+      } else {
+        setInfoError(result.error)
+      }
+    })
   }
 
   const TIKTOK_URL = 'https://www.tiktok.com/@noahtoddler'
@@ -142,7 +155,7 @@ export default function Page() {
             <p className="eyebrow">SAVE YOUR SEAT</p>
             <h3>Get the Zoom invite</h3>
             <p className="cta-subcopy">(we&apos;ll email you the link and a calendar hold)</p>
-            {infoSubmitted ? <p className="success-message">Seat saved. The Zoom invite is on its way to your inbox.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit"><strong>sign me up</strong></button></form>}
+            {infoSubmitted ? <p className="success-message">Seat saved. The Zoom invite is on its way to your inbox.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit" disabled={isSending}><strong>{isSending ? 'sending…' : 'sign me up'}</strong></button>{infoError ? <p className="form-error" role="alert">{infoError}</p> : null}</form>}
             <p className="fine-print">One email with the joining link. No spam, no noise.</p>
           </div>
         </div>
