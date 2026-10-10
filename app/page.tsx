@@ -63,7 +63,7 @@ export default function Page() {
     if (!value) return
     const subject = encodeURIComponent('Noah Toddler info request')
     const body = encodeURIComponent(value)
-    window.location.href = `mailto:joe@animationfolk.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:team@noahtoddler.com?subject=${subject}&body=${body}`
     setInfoSubmitted(true)
   }
 
