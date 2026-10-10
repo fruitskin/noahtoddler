@@ -850,9 +850,64 @@ h2 em {
   background: var(--pink);
 }
 
-.comic-who {
+  .comic-who {
   background: var(--green);
-}
+  }
+
+  .comic-judge {
+  background: var(--yellow);
+  grid-column: 1 / -1;
+  }
+
+  .judge-photo {
+  aspect-ratio: 1;
+  border: 2px solid var(--border);
+  border-radius: 1rem;
+  flex-shrink: 0;
+  max-width: 18rem;
+  overflow: hidden;
+  width: 100%;
+  }
+
+  .judge-photo img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  }
+
+  .judge-copy {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  min-width: 0;
+  }
+
+  .judge-kicker {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  }
+
+  .judge-recognition-title {
+  font-weight: 700;
+  margin-top: .25rem;
+  }
+
+  .judge-recognition {
+  columns: 1;
+  font-size: .95rem;
+  line-height: 1.4;
+  margin: 0;
+  padding-left: 1.1rem;
+  }
+
+  .judge-recognition li {
+  break-inside: avoid;
+  margin-bottom: .35rem;
+  }
+
 
 .competition-cta {
   display: flex;
@@ -1525,9 +1580,25 @@ h2 em {
   }
 
   /* Third panel takes a full row so the 2-col grid doesn't leave a gap */
-  .comic-panel:last-child {
-    grid-column: 1 / -1;
+  .comic-who {
+  grid-column: 1 / -1;
   }
+
+  .comic-judge {
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+  }
+
+  .judge-photo {
+  width: 14rem;
+  }
+
+  .judge-recognition {
+  columns: 2;
+  column-gap: 2rem;
+  }
+
 
   .competition-sponsors {
     grid-column: 2 / -1;
@@ -1624,9 +1695,19 @@ h2 em {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .comic-panel:last-child {
-    grid-column: auto;
+  .comic-who {
+  grid-column: auto;
   }
+
+  .comic-judge {
+  gap: 2.5rem;
+  padding: 2.5rem;
+  }
+
+  .judge-photo {
+  width: 18rem;
+  }
+
 
   .info-session {
     gap: 2rem;

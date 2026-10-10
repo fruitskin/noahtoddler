@@ -138,6 +138,30 @@ export default function Page() {
             <h3>Who?</h3>
             <p>This competition is open to all animators. 2D or 3D, student or veteran. As long as you can bring Noah to life move, you are welcome.</p>
           </article>
+          <article className="comic-panel comic-judge">
+            <div className="judge-photo">
+              <img src="/judges/nene-parsotam.jpeg" alt="Nene Parsotam" />
+            </div>
+            <div className="judge-copy">
+              <p className="judge-kicker">Meet the judge</p>
+              <h3>Nene Parsotam</h3>
+              <p>Nene is a creative leader, podcaster, problem solver, storyteller, collaborator, hyper nerd, and polymath. For two decades Nene has shaped creative work for some of the world&apos;s most demanding and well known brands including HBO, Amazon, Disney, Dove, Shea Moisture, Dior, Sony, Cadbury&apos;s, Jaguar, Sky, Lloyds, HP and many more.</p>
+              <p>Besides being just an absolute legend, she has a ton of industry recognition behind her and we&apos;re so proud that she has agreed to be part of this project. Thank you Nene!</p>
+              <p className="judge-recognition-title">Some of her industry recognition includes:</p>
+              <ul className="judge-recognition">
+                <li>Cannes Lions Industry Craft Jury Member: 2025, 2019</li>
+                <li>Adobe Firefly / Boards Consultancy Focus Group: 2025</li>
+                <li>D&amp;AD Professional Awards, Direct/Digital Judge: 2024, 2018</li>
+                <li>Executive Creative Director, D&amp;AD Shift London: 2025, 2024, 2023</li>
+                <li>Ad Week, Profiles in Black Creativity: 2022</li>
+                <li>D&amp;AD New Blood Jury President, 21 Grams: 2021</li>
+                <li>Dubai Lynx Outdoor &amp; Direct Jury: 2021</li>
+                <li>United Nations Women Unstereotype Alliance Speaker: 2021</li>
+                <li>Eurobest Industry Design, Print &amp; Outdoor Craft Jury: 2018</li>
+                <li>Tech Nation, Top 50 Influential Black Voices in Tech: 2020</li>
+              </ul>
+            </div>
+          </article>
         </div>
         <div className="info-session" id="info-session">
           <div className="info-copy">
