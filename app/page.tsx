@@ -188,7 +188,7 @@ export default function Page() {
             <p className="fine-print">One email with the joining link. No spam, no noise.</p>
           </div>
         </div>
-        <div className="competition-sponsors"><p className="sponsors-title">Big thanks to our competition sponsor</p><div className="competition-logos" aria-label="Sponsor: Animation Mentor"><img className="comp-logo" src="/logos/animation-mentor.png" alt="Animation Mentor" /></div></div>
+        <div className="competition-sponsors"><p className="sponsors-title">Big thanks to our competition sponsor</p><div className="competition-logos" aria-label="Sponsor: Animation Mentor"><a href="https://www.animationmentor.com" target="_blank" rel="noopener noreferrer" className="comp-logo-link"><img className="comp-logo" src="/logos/animation-mentor.png" alt="Animation Mentor - A Yellowbrick Learning Brand" /></a></div></div>
       </section>
 
       <section className="rig section-pad" id="rig">
