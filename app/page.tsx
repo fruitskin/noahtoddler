@@ -145,7 +145,7 @@ export default function Page() {
             </div>
             <div className="judge-copy">
               <p className="judge-kicker">Meet the judges</p>
-              <h3><a href="https://www.linkedin.com/in/neneparsotam" target="_blank" rel="noopener noreferrer">Nene Parsotam</a></h3>
+              <h3>Nene Parsotam</h3>
               <p>Nene is a creative leader, podcaster, problem solver, storyteller, collaborator, hyper nerd, and polymath. For two decades Nene has shaped creative work for some of the world&apos;s most demanding and well known brands including HBO, Amazon, Disney, Dove, Shea Moisture, Dior, Sony, Cadbury&apos;s, Jaguar, Sky, Lloyds, HP and many more.</p>
               <p>Besides being just an absolute legend, she has a ton of industry recognition behind her and we&apos;re so proud that she has agreed to be part of this project. Thank you Nene!</p>
               <p className="judge-recognition-title">Some of her industry recognition includes:</p>
@@ -169,7 +169,7 @@ export default function Page() {
             </div>
             <div className="judge-copy">
               <p className="judge-kicker">Judge</p>
-              <h3><a href="https://www.linkedin.com/in/samcundall/" target="_blank" rel="noopener noreferrer">Sam Cundall</a></h3>
+              <h3>Sam Cundall</h3>
               <p>The &lsquo;emoji guy&rsquo;. Yes, Sam leads the team for some of the world&apos;s most well known animated emojis and to add him to our judges panel is fantastic.</p>
               <p>Sam is currently Principal Creative Design for Microsoft Teams where he specialises in design, animation, motion, visual language and marketing. He&apos;s an animator and creative director, leading emotions, reactions, and other personal expression content. 😉</p>
               <p>Sam is always looking at creating experiences that are more relevant, appealing and fun! for customers.</p>
