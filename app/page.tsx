@@ -108,7 +108,7 @@ export default function Page() {
         <div className="hero-copy">
           <h1>INTRODUCING<br /><em>NOAH</em><br />TO YOU</h1>
           <p className="hero-dek">Noah is a new adult comedy about a young toddler and his adoring parents, his dog and his punk baby sitter. Think Family Guy’s Stewie, with hints Maggie Simpson and Boss Baby! Noah is the first new character we're exploring in his world. He's an annoying toddler who is endured by everybody and loved only by his not-so-long-suffering mum and dad. We&apos;re building a funny but edgy world based around Noah, and we&apos;d love you to join us. Help shape Noah&apos;s destiny by becoming a founding fan, and watch him grow!</p>
-          <p className="hero-dek">Look out the Animation Competition launching in October with fabulous prizes including exclusive physical collectables, software subscriptions and more.</p>
+          <p className="hero-dek">Look out the Animation Competition launching October 31st with fabulous prizes including exclusive physical collectables and scholarships to online courses with Animation Mentor and New York University. Open to animators of all levels!</p>
           <a className="arrow-link" href="#community">JOIN THE GANG</a>
         </div>
         <div className="hero-art"><img className="hero-image" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/noah_sitting-gsXkdgTE2zwn8JUtN3HUMLA2bcMnFl.png" alt="Hand-drawn Noah seated in a turquoise outfit with an oversized salmon pacifier" /><a className="hero-cta" href="#community"><strong>become a founding fan</strong><span>JOIN THE GANG</span></a></div>
