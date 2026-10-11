@@ -123,13 +123,13 @@ export default function Page() {
         <div className="competition-banner">
           <p className="competition-kicker">OCTOBER 2026</p>
           <h2>Animation Competition</h2>
-          <p className="competition-lead">One toddler. Eleven seconds. Launching October with awesome prizes & judges.</p>
+          <p className="competition-lead">One toddler. Eleven seconds. Launching end of October with awesome prizes & judges.</p>
         </div>
         <div className="comic-grid">
           <article className="comic-panel comic-why">
             <h3>Why?</h3>
             <p>We're building a new adult comedy IP and actively want to open the process up to the creative community.</p>
-            <p>This will allow us to guage interest in 'Noah' but also find a shortlist animators who we can call on if and when Noah gets funded. We have invested time and energy in, writing, voice acting and recording, character design and rigging to provide professional assets for you to work with alongside dailies run as normal in a remote studio setting.</p>
+            <p>This will allow us to develop 'Noah' in collaboration with the best animators and find a shortlist animators who we can call on if and when Noah gets funded. We have seriously invested time and energy in, writing, voice acting and recording, character design, modelling and rigging to provide professional assets for you to work with alongside dailies run as normal in a remote studio setting.</p>
           </article>
           <article className="comic-panel comic-what">
             <h3>What?</h3>
