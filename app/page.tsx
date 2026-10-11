@@ -137,7 +137,7 @@ export default function Page() {
           </article>
           <article className="comic-panel comic-who">
             <h3>Who?</h3>
-            <p>This competition is open to all animators. 2D or 3D, student or veteran. As long as you can bring Noah to life move, you are welcome.</p>
+            <p>This competition is open to all animators. 2D or 3D, student or veteran. As long as you can bring Noah to life, you are welcome.</p>
           </article>
           <article className="comic-panel comic-judge">
             <div className="judge-photo">
