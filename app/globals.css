@@ -1367,9 +1367,20 @@ h2 em {
   line-height: 1.4;
 }
 
-.info-card .fine-print {
+  .info-card .fine-print {
   margin-top: 1rem;
-}
+  }
+
+  .info-card .fine-print + .fine-print {
+  margin-top: .35rem;
+  }
+
+  .info-card .fine-print a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+  }
+
 
 .signup-card {
   background: var(--yellow);
