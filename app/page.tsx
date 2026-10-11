@@ -133,7 +133,7 @@ export default function Page() {
           </article>
           <article className="comic-panel comic-what">
             <h3>What?</h3>
-            <p>We want to you to do you best work using the assets we provide. We have designed 4 shorts, to run at approximately 11 seconds. Each shot is voiced by professional actors and has rough animatics but you are free to design the cinemaphotography however you like. This shot will be one for your demo reel. Play with Noah and bring him to life, using your own unique style.</p>
+            <p>We want to you to do you best work using the assets we provide. We have designed 4 shorts, to run at approximately 11 seconds. Each shot is voiced by professional actors. You are free to design the cinemaphotography however you like. This shot will be one for your demo reel. Play with Noah and bring him to life, using your own unique style.</p>
           </article>
           <article className="comic-panel comic-who">
             <h3>Who?</h3>
