@@ -81,7 +81,8 @@ export default function Page() {
 
   const crew = [
     { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
-    { name: 'Nene Parsotam', role: 'ECD / Advisor', handle: 'neneparsotam' },
+    { name: 'Nene Parsotam', role: 'ECD / Advisor / Judge', handle: 'neneparsotam' },
+    { name: 'Sam Cundall', role: 'Judge', handle: 'samcundall' },
     { name: 'Luigi Lucarelli', role: 'Character Designer', handle: 'luigilucarelli' },
     { name: 'Aman Bhanot', role: 'Advisor', handle: 'aman-bhanot-99370317' },
     { name: 'Lisa Graydon', role: 'Actress', handle: '4444lisagraydon' },
@@ -160,6 +161,18 @@ export default function Page() {
                 <li>Eurobest Industry Design, Print &amp; Outdoor Craft Jury: 2018</li>
                 <li>Tech Nation, Top 50 Influential Black Voices in Tech: 2020</li>
               </ul>
+            </div>
+          </article>
+          <article className="comic-panel comic-judge comic-judge-alt">
+            <div className="judge-photo">
+              <img src="/judges/sam-cundall.png" alt="Sam Cundall" />
+            </div>
+            <div className="judge-copy">
+              <p className="judge-kicker">Meet the judge</p>
+              <h3>Sam Cundall</h3>
+              <p>The &lsquo;emoji guy&rsquo;. Yes, Sam leads the team for some of the world&apos;s most well known animated emojis and to add him to our judges panel is fantastic.</p>
+              <p>Sam is currently Principal Creative Design for Microsoft Teams where he specialises in design, animation, motion, visual language and marketing. He&apos;s an animator and creative director, leading emotions, reactions, and other personal expression content. 😉</p>
+              <p>Sam is always looking at creating experiences that are more relevant, appealing and fun! for customers.</p>
             </div>
           </article>
         </div>
