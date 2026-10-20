@@ -79,7 +79,7 @@ export default function Page() {
   const INSTAGRAM_URL = 'https://www.instagram.com/noahtoddler'
   const WHATSAPP_URL = 'https://whatsapp.com/channel/0029Vb8l0X72Jl8IlvyHM60d'
 
-  const crew = [
+  const crew: { name: string; role: string; handle: string; url?: string }[] = [
     { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
     { name: 'Nene Parsotam', role: 'ECD / Advisor / Judge', handle: 'neneparsotam' },
     { name: 'Sam Cundall', role: 'Judge', handle: 'samcundall' },
@@ -90,6 +90,7 @@ export default function Page() {
     { name: 'Sarah Dollar', role: 'Writer', handle: 'sarah-dollar-8a136439' },
     { name: 'Brollyman', role: 'Composer', handle: 'brolly-brollyman-5b7937b' },
     { name: 'Tom', role: 'Sculptor / Artist', handle: 'thomas-ridley-a79b4286' },
+ { name: 'Juan Carlos CR', role: '3D Artist / Director', handle: 'juancarloscr', url: 'https://juancarloscr.com/pages/about' },
 
   ]
 
@@ -210,7 +211,7 @@ export default function Page() {
         <div className="rig-copy"><SectionLabel>The Rigs</SectionLabel><h2>2D & 3D<br /><em>rigs available</em></h2><p>At the start of the competition, we will provide 3D and 2D rigs, distributed via Gumroad.</p></div>
       </section>
 
-      <section className="team section-pad" id="team"><div className="section-aside"><SectionLabel>The crew</SectionLabel></div><div className="team-content"><h2>A small crew with<br /><em>big references.</em></h2><div className="team-grid"><div><p className="team-role">MADE BY</p><h3>Animationfolk</h3></div><div><p className="team-role">ADVISORS FROM</p><p>ex-Prime Video / Disney<br />ex-DreamWorks<br />ex-Framestore / ILM</p></div></div><p className="team-footer">As well as folk from some of the best known studios on the planet, we have a scupltor working on a real world model of Noah. Because we believe that the craftsmanship and artistry of design and animation takes a leading role!</p><div className="crew-grid">{crew.map((person) => (<a key={person.handle} className="crew-card card-lift" href={`https://www.linkedin.com/in/${person.handle}`} target="_blank" rel="noreferrer"><span className="crew-name">{person.name}</span><span className="crew-role">{person.role}</span><span className="crew-link">LinkedIn ↗</span></a>))}</div><div className="team-logos" aria-label="Companies represented across the team and advisor network"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logos-obS7ydflIxy2t5sOPVYPVhdT8rzNE5.png" alt="Grayscale logo strip featuring Microsoft, Disney, Amazon Studios, Prime Video, Paramount, Meta, Hasbro, and DreamWorks" /></div></div></section>
+      <section className="team section-pad" id="team"><div className="section-aside"><SectionLabel>The crew</SectionLabel></div><div className="team-content"><h2>A small crew with<br /><em>big references.</em></h2><div className="team-grid"><div><p className="team-role">MADE BY</p><h3>Animationfolk</h3></div><div><p className="team-role">ADVISORS FROM</p><p>ex-Prime Video / Disney<br />ex-DreamWorks<br />ex-Framestore / ILM</p></div></div><p className="team-footer">As well as folk from some of the best known studios on the planet, we have a scupltor working on a real world model of Noah. Because we believe that the craftsmanship and artistry of design and animation takes a leading role!</p><div className="crew-grid">{crew.map((person) => (<a key={person.handle} className="crew-card card-lift" href={person.url ?? `https://www.linkedin.com/in/${person.handle}`} target="_blank" rel="noreferrer"><span className="crew-name">{person.name}</span><span className="crew-role">{person.role}</span><span className="crew-link">{person.url ? 'Website ↗' : 'LinkedIn ↗'}</span></a>))}</div><div className="team-logos" aria-label="Companies represented across the team and advisor network"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logos-obS7ydflIxy2t5sOPVYPVhdT8rzNE5.png" alt="Grayscale logo strip featuring Microsoft, Disney, Amazon Studios, Prime Video, Paramount, Meta, Hasbro, and DreamWorks" /></div></div></section>
 
 
       <section className="community community-qr" id="community"><div className="community-copy"><SectionLabel>Community</SectionLabel><h2>Join the broadcast.<br /><em>Not a group.</em></h2><p>Updates, rig drops, competition news, and the occasional Noah-related emergency. A broadcast channel keeps the noise useful and the admin survivable.</p><a className="black-button" href={WHATSAPP_URL} target="_blank" rel="noreferrer">OPEN WHATSAPP ↗</a></div><a className="qr-card card-lift" href={WHATSAPP_URL} target="_blank" rel="noreferrer"><span className="qr-eyebrow">SCAN TO JOIN</span><span className="qr-frame"><img src="/whatsapp-qr.png" alt="Scan this QR code to join the Noah WhatsApp channel" /></span><span className="qr-hint">Point your camera here ↗</span></a></section>
