@@ -1172,6 +1172,15 @@ h2 em {
   width: 150px;
 }
 
+.discord-frame {
+  padding: 1.5rem 1.75rem;
+}
+
+.discord-frame img {
+  image-rendering: auto;
+  width: 96px;
+}
+
 .qr-hint {
   color: var(--red);
   font-family: var(--font-gochi), cursive;
