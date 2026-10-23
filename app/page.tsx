@@ -200,7 +200,7 @@ export default function Page() {
             <h3>Get the Zoom invite</h3>
             <p className="cta-subcopy">(we&apos;ll email you the link and a calendar hold)</p>
             {infoSubmitted ? <p className="success-message">Seat saved. The Zoom invite is on its way to your inbox.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit" disabled={isSending}><strong>{isSending ? 'sending…' : 'sign me up'}</strong></button>{infoError ? <p className="form-error" role="alert">{infoError}</p> : null}</form>}
-            <p className="fine-print">One email with the joining link. No spam, no noise.</p>
+            <p className="fine-print">Only essential communication. No noise.</p>
             <p className="fine-print">Please feel free to email us on <a href="mailto:team@noahtoddler.com">team@noahtoddler.com</a></p>
           </div>
         </div>
