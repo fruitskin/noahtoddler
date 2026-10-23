@@ -1129,6 +1129,12 @@ h2 em {
   padding-left: 0;
 }
 
+.community-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
 .community-qr {
   align-items: center;
   padding: 3.5rem 1.25rem;
@@ -1164,6 +1170,15 @@ h2 em {
   height: auto;
   image-rendering: pixelated;
   width: 150px;
+}
+
+.discord-frame {
+  padding: 1.5rem 1.75rem;
+}
+
+.discord-frame img {
+  image-rendering: auto;
+  width: 96px;
 }
 
 .qr-hint {
