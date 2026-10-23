@@ -181,11 +181,11 @@ export default function Page() {
           <div className="info-copy">
             <p className="info-live"><span className="info-dot" aria-hidden="true" />LIVE ON ZOOM</p>
             <h2>Come to the info session.</h2>
-            <p>Friday 23rd October</p>
+            <p>Friday 30th October</p>
             <ul className="info-times">
-              <li>7:00 PM UTC (Coordinated Universal Time)</li>
-              <li>9:00 PM CEST (Central European Summer Time)</li>
-              <li>12:00 PM PDT (Pacific Daylight Time / Los Angeles)</li>
+              <li>8:00 PM GMT (UK time)</li>
+              <li>9:00 PM CET (Central European Time)</li>
+              <li>1:00 PM PDT (Pacific Daylight Time / Los Angeles)</li>
             </ul>
             <p>A live Zoom call, where we walk through the competition, show the Noah rigs and assets, and answer every question you throw at us; briefs, deadlines, formats, prizes, the lot. A recording of the call will be distributed to the email list so dont worry if you can't make it.</p>
             <ul className="info-points">
