@@ -180,7 +180,8 @@ export default function Page() {
         <div className="info-session" id="info-session">
           <div className="info-copy">
             <p className="info-live"><span className="info-dot" aria-hidden="true" />LIVE ON ZOOM</p>
-            <h2>Come to the info session.</h2>
+            <h2>Miss our first session?</h2>
+            <p>No worries, we have another planned. Simply sign up with your email!</p>
             <p>Friday 30th October</p>
             <ul className="info-times">
               <li>8:00 PM GMT (UK time)</li>
