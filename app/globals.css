@@ -863,6 +863,10 @@ h2 em {
   background: var(--muted);
   }
 
+  .comic-judge-gogan {
+  background: var(--blue);
+  }
+
   .judge-photo {
   aspect-ratio: 1;
   border: 2px solid var(--border);
