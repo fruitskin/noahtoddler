@@ -83,6 +83,7 @@ export default function Page() {
     { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
     { name: 'Nene Parsotam', role: 'ECD / Advisor / Judge', handle: 'neneparsotam' },
     { name: 'Sam Cundall', role: 'Judge', handle: 'samcundall' },
+    { name: 'Go-gan', role: 'Judge', handle: 'gogan-i-go-gan-i-bb709b83' },
     { name: 'Luigi Lucarelli', role: 'Character Designer', handle: 'luigilucarelli' },
     { name: 'Aman Bhanot', role: 'Advisor', handle: 'aman-bhanot-99370317' },
     { name: 'Lisa Graydon', role: 'Actress', handle: '4444lisagraydon' },
@@ -174,6 +175,18 @@ export default function Page() {
               <p>The &lsquo;emoji guy&rsquo;. Yes, Sam leads the team for some of the world&apos;s most well known animated emojis and to add him to our judges panel is fantastic.</p>
               <p>Sam is currently Principal Creative Design for Microsoft Teams where he specialises in design, animation, motion, visual language and marketing. He&apos;s an animator and creative director, leading emotions, reactions, and other personal expression content. 😉</p>
               <p>Sam is always looking at creating experiences that are more relevant, appealing and fun! for customers.</p>
+            </div>
+          </article>
+          <article className="comic-panel comic-judge comic-judge-gogan">
+            <div className="judge-photo">
+              <img src="/judges/gogan.png" alt="Go-gan's avatar: a cartoon skeleton with a red beard and pink cat-ear headphones working at a laptop" />
+            </div>
+            <div className="judge-copy">
+              <p className="judge-kicker">Meet the judge</p>
+              <h3>Go-gan</h3>
+              <p>Go-gan is someone who really cares about the industry. When he&apos;s not giving feedback and support to animators on his popular Discord Server or coaching and mentoring them through his dedicated coaching program he&apos;s directing animation for characters for Squanch Games.</p>
+              <p>Go-gan has over 13 years experience animating across multiple IPs, skilled in computer animation, traditional animation, storyboarding, and drawing and regularly shares his expertise across various social media channels.</p>
+              <p>We&apos;re very proud to have Go-gan on our panel of expert judges. Go Go-gan!</p>
             </div>
           </article>
         </div>
