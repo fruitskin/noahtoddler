@@ -65,12 +65,12 @@ export default function Page() {
   const TIKTOK_URL = 'https://www.tiktok.com/@noahtoddler'
   const INSTAGRAM_URL = 'https://www.instagram.com/noahtoddler'
   const WHATSAPP_URL = 'https://whatsapp.com/channel/0029Vb8l0X72Jl8IlvyHM60d'
+  const DISCORD_URL = 'https://discord.gg/FtpE4pmPSQ'
 
   const crew = [
     { name: 'Joe Dollar-Smirnov', role: 'Creative / Producer', handle: 'joe-dollar-smirnov' },
     { name: 'Nene Parsotam', role: 'ECD / Advisor', handle: 'neneparsotam' },
     { name: 'Luigi Lucarelli', role: 'Character Designer', handle: 'luigilucarelli' },
-    { name: 'Aman Bhanot', role: 'Advisor', handle: 'aman-bhanot-99370317' },
     { name: 'Lisa Graydon', role: 'Actress', handle: '4444lisagraydon' },
     { name: 'Neil Bebber', role: 'Writer', handle: 'neil-bebber' },
     { name: 'Sarah Dollar', role: 'Writer', handle: 'sarah-dollar-8a136439' },
@@ -86,7 +86,7 @@ export default function Page() {
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="site-nav">MENU <span>{menuOpen ? '×' : '＋'}</span></button>
         <nav id="site-nav" className={menuOpen ? 'site-nav open' : 'site-nav'} aria-label="Main navigation">
           {navItems.map(([label, href]) => <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
-          <a className="nav-sticker" href="#community" onClick={() => setMenuOpen(false)}>JOIN THE GANG ↗</a>
+          <a className="nav-sticker" href="#competition" onClick={() => setMenuOpen(false)}>JOIN THE COMPETITION ↗</a>
         </nav>
       </header>
 
@@ -95,9 +95,9 @@ export default function Page() {
           <h1>INTRODUCING<br /><em>NOAH</em><br />TO YOU</h1>
           <p className="hero-dek">Noah is a new adult comedy about a young toddler and his adoring parents, his dog and his punk baby sitter. Think Family Guy’s Stewie, with hints Maggie Simpson and Boss Baby! Noah is the first new character we're exploring in his world. He's an annoying toddler who is endured by everybody and loved only by his not-so-long-suffering mum and dad. We&apos;re building a funny but edgy world based around Noah, and we&apos;d love you to join us. Help shape Noah&apos;s destiny by becoming a founding fan, and watch him grow!</p>
           <p className="hero-dek">Look out the Animation Competition launching in October with fabulous prizes including exclusive physical collectables, software subscriptions and more.</p>
-          <a className="arrow-link" href="#community">JOIN THE GANG</a>
+          <a className="arrow-link" href="#competition">JOIN THE COMPETITION</a>
         </div>
-        <div className="hero-art"><img className="hero-image" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/noah_sitting-gsXkdgTE2zwn8JUtN3HUMLA2bcMnFl.png" alt="Hand-drawn Noah seated in a turquoise outfit with an oversized salmon pacifier" /><a className="hero-cta" href="#community"><strong>become a founding fan</strong><span>JOIN THE GANG</span></a></div>
+        <div className="hero-art"><img className="hero-image" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/noah_sitting-gsXkdgTE2zwn8JUtN3HUMLA2bcMnFl.png" alt="Hand-drawn Noah seated in a turquoise outfit with an oversized salmon pacifier" /><div className="hero-cta"><a className="hero-cta-main" href="#competition"><strong>join the competition</strong></a><a className="hero-cta-sub" href={DISCORD_URL} target="_blank" rel="noreferrer"><span>JOIN OUR DISCORD GROUP ↗</span></a></div></div>
       </section>
 
       <section className="intro section-pad" id="noah">
@@ -128,7 +128,7 @@ export default function Page() {
         </div>
         <div className="info-session" id="info-session">
           <div className="info-copy">
-            <p className="info-live"><span className="info-dot" aria-hidden="true" />LIVE ON ZOOM</p>
+            <p className="info-live"><span className="info-dot" aria-hidden="true" />COMPETITION IS NOW LIVE — JOIN THE FUN.</p>
             <h2>Come to the info session.</h2>
             <p>Late September 2026 (exact time TBC)</p>
             <p>A live Zoom call, where we walk through the competition, show the Noah rigs and assets, and answer every question you throw at us; briefs, deadlines, formats, prizes, the lot. A recording of the call will be distributed to the email list so dont worry if you can't make it.</p>
@@ -140,7 +140,7 @@ export default function Page() {
           </div>
           <div className="signup-card info-card">
             <p className="eyebrow">SAVE YOUR SEAT</p>
-            <h3>Get the Zoom invite</h3>
+            <h3>Join the mailing list so you don&apos;t miss out on anything</h3>
             <p className="cta-subcopy">(we&apos;ll email you the link and a calendar hold)</p>
             {infoSubmitted ? <p className="success-message">Seat saved. The Zoom invite is on its way to your inbox.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit"><strong>sign me up</strong></button></form>}
             <p className="fine-print">One email with the joining link. No spam, no noise.</p>
@@ -157,7 +157,7 @@ export default function Page() {
       <section className="team section-pad" id="team"><div className="section-aside"><SectionLabel>The crew</SectionLabel></div><div className="team-content"><h2>A small crew with<br /><em>big references.</em></h2><div className="team-grid"><div><p className="team-role">MADE BY</p><h3>Animationfolk</h3></div><div><p className="team-role">ADVISORS FROM</p><p>ex-Prime Video / Disney<br />ex-DreamWorks<br />ex-Framestore / ILM</p></div></div><p className="team-footer">As well as folk from some of the best known studios on the planet, we have a scupltor working on a real world model of Noah. Because we believe that the craftsmanship and artistry of design and animation takes a leading role!</p><div className="crew-grid">{crew.map((person) => (<a key={person.handle} className="crew-card card-lift" href={`https://www.linkedin.com/in/${person.handle}`} target="_blank" rel="noreferrer"><span className="crew-name">{person.name}</span><span className="crew-role">{person.role}</span><span className="crew-link">LinkedIn ↗</span></a>))}</div><div className="team-logos" aria-label="Companies represented across the team and advisor network"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logos-obS7ydflIxy2t5sOPVYPVhdT8rzNE5.png" alt="Grayscale logo strip featuring Microsoft, Disney, Amazon Studios, Prime Video, Paramount, Meta, Hasbro, and DreamWorks" /></div></div></section>
 
 
-      <section className="community community-qr" id="community"><div className="community-copy"><SectionLabel>Community</SectionLabel><h2>Join the broadcast.<br /><em>Not a group.</em></h2><p>Updates, rig drops, competition news, and the occasional Noah-related emergency. A broadcast channel keeps the noise useful and the admin survivable.</p><a className="black-button" href={WHATSAPP_URL} target="_blank" rel="noreferrer">OPEN WHATSAPP ↗</a></div><a className="qr-card card-lift" href={WHATSAPP_URL} target="_blank" rel="noreferrer"><span className="qr-eyebrow">SCAN TO JOIN</span><span className="qr-frame"><img src="/whatsapp-qr.png" alt="Scan this QR code to join the Noah WhatsApp channel" /></span><span className="qr-hint">Point your camera here ↗</span></a></section>
+      <section className="community community-qr" id="community"><div className="community-copy"><SectionLabel>Community</SectionLabel><h2>Join the Discord<br /><em>community.</em></h2><p>Rig drops, competition news, work-in-progress crits, dailies and the occasional Noah-related emergency. Hang out with the crew and the other entrants, ask questions and show us what you&apos;re making.</p><a className="black-button" href={DISCORD_URL} target="_blank" rel="noreferrer">OPEN DISCORD ↗</a></div><a className="qr-card discord-card card-lift" href={DISCORD_URL} target="_blank" rel="noreferrer"><span className="qr-eyebrow">TAP TO JOIN</span><span className="discord-mark">Discord</span><span className="qr-hint">Come and say hi ↗</span></a></section>
 
       <section className="policy section-pad"><div className="section-aside"><SectionLabel>AI policy</SectionLabel></div><div className="policy-copy"><h2>We care about<br /><em>the output.</em></h2><p>Assistive AI is changing how everyone works and we know of super talented artists using AI tools to generate great content. Ultimately, we’re interested in quality, and our decisions will be based on quality of animation, storytelling and craft. Like many teams, we’re exploring assistive AI to help expand our capabilities. For example, we can run research tasks to find sponsors for this competition. Even this website was coded with the help of a coding assistant.. However, generative AI text-to-video does warrant a longer conversation. We want to be transparent and we want you to be transparent. If there is demand for entrants primarily using assitive AI tools we want to know about it and have that conversation so we can split the award categories across 3D, 2D and AI. If you are considering entering but will not because of this statement, we would also be very interested to hear about that view and have an open conversation about it. Please feel free to email us on competition@noahtoddler.com</p><p>We value the hand, the eye, the odd choice, and the person behind it. Our standard is artistic integrity, not a purity test. Make good work. Be honest about how you made it.</p></div></section>
 
