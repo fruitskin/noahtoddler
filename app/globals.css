@@ -411,13 +411,25 @@ h2 em {
   text-transform: lowercase;
 }
 
-.hero-cta span {
+  .hero-cta span {
   font-family: var(--font-aleo), Georgia, serif;
   font-size: .735rem;
   font-weight: 400;
   letter-spacing: .08em;
   text-transform: uppercase;
-}
+  }
+
+  .hero-cta a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  }
+
+  .hero-cta-sub:hover span,
+  .hero-cta-sub:focus-visible span {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  }
 
 .hero-cta:hover {
   animation: gang-jiggle .55s ease-in-out infinite;
@@ -1190,7 +1202,8 @@ h2 em {
   font-family: var(--font-gochi), cursive;
   font-size: 1.05rem;
   letter-spacing: .02em;
-}
+  }
+
 
 .info-session {
   align-items: start;
