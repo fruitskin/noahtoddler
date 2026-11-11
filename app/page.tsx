@@ -129,21 +129,16 @@ export default function Page() {
         <div className="info-session" id="info-session">
           <div className="info-copy">
             <p className="info-live"><span className="info-dot" aria-hidden="true" />COMPETITION IS NOW LIVE — JOIN THE FUN.</p>
-            <h2>Come to the info session.</h2>
-            <p>Late September 2026 (exact time TBC)</p>
-            <p>A live Zoom call, where we walk through the competition, show the Noah rigs and assets, and answer every question you throw at us; briefs, deadlines, formats, prizes, the lot. A recording of the call will be distributed to the email list so dont worry if you can't make it.</p>
-            <ul className="info-points">
-              <li>Full competition walkthrough</li>
-              <li>Live Q&amp;A with the crew</li>
-              <li>Rig &amp; asset demo</li>
-            </ul>
+            <h2>Everything you need is on Discord.</h2>
+            <p>For more info, and to grab all the resources you need to take part, join our Discord group.</p>
+            <a className="black-button" href={DISCORD_URL} target="_blank" rel="noreferrer">JOIN THE DISCORD ↗</a>
           </div>
           <div className="signup-card info-card">
-            <p className="eyebrow">SAVE YOUR SEAT</p>
+            <p className="eyebrow">STAY IN THE LOOP</p>
             <h3>Join the mailing list so you don&apos;t miss out on anything</h3>
-            <p className="cta-subcopy">(we&apos;ll email you the link and a calendar hold)</p>
-            {infoSubmitted ? <p className="success-message">Seat saved. The Zoom invite is on its way to your inbox.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit"><strong>sign me up</strong></button></form>}
-            <p className="fine-print">One email with the joining link. No spam, no noise.</p>
+            <p className="cta-subcopy">(competition news, deadlines and rig drops, straight to your inbox)</p>
+            {infoSubmitted ? <p className="success-message">You&apos;re on the list. We&apos;ll be in touch.</p> : <form className="info-form" onSubmit={handleInfoSubmit}><label htmlFor="info-email">Email address:</label><input id="info-email" type="email" required value={infoEmail} onChange={(event) => setInfoEmail(event.target.value)} placeholder="you@example.com" /><button type="submit" className="info-submit"><strong>sign me up</strong></button></form>}
+            <p className="fine-print">Only the important stuff. No spam, no noise.</p>
           </div>
         </div>
         <div className="competition-sponsors"><p className="sponsors-title">Big thanks to our competition sponsors</p><div className="competition-logos" aria-label="Sponsors: Marionette and Animation Mentor"><img className="comp-logo" src="/logos/marionette.png" alt="Marionette" /><img className="comp-logo" src="/logos/animation-mentor.png" alt="Animation Mentor" /></div></div>
